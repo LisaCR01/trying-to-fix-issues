@@ -30,7 +30,7 @@ app.get('*', (req, res) =>
  
 
 
-/*
+
 //delete note according to their tagged id.
 app.delete("/api/notes/:id", (req, res) => {
   let noteList = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
@@ -50,7 +50,7 @@ app.use(function(req, res, next) {
   res.status(404);
     res.sendFile(path.join(__dirname, '/public/index.html') );
     return;
-});   */
+});   
 app.listen(PORT, () =>
   console.log(`App listening at http://localhost:${PORT} 🚀`)
 );
